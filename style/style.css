@@ -1,42 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
-:root {
-    --verde: #20ba01;
-    --background: #222;
-    --preto: #101010;
-    --branco: #f2f2f2;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: var(--background);
-    font-family: 'Roboto', sans-serif;
-    color: var(--branco);
-}
-
-header .container {
-    background: var(--preto);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header h2 .logo {
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--verde);
-    padding-left: 25px;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--branco);
-    margin-right: 25px;
-}
-
-header nav a:hover {
-    color: var(--verde);
-}
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+     :root {
+        --verde: #20ba01;
+        --background: #222;
+        --preto: #101010;
+        --branco: #f2f2f2;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: var(--background);
+        font-family: 'Roboto', sans-serif;
+        color: var(--branco);
+    }
+    
+    header .wrapper {
+        background: var(--preto);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header .logo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 35px;
+        color: var(--verde);
+        padding: 10px 25px;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: var(--branco);
+        margin-right: 30px;
+    }
+    
+    header nav a:hover {
+        color: var(--verde);
+    }
+    
+    header nav input[type=text] {
+        padding: 2px;
+        border-radius: 20px;
+        margin-right: 40px;
+        font-size: 17px;
+        background: var(--preto);
+        color: var(--branco);
+    }
+    
+    header nav input[type=text]::placeholder {
+        padding-left: 10px;
+        color: var(--branco);
+    }
+    
+    header nav i {
+        font-size: 18px;
+    }
+    /* main banner */
+    
+    .main-banner {
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3) 70%), url('../src/img/battlefield.jpg');
+        background-size: cover;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main-banner .wrapper {
+        margin: 30px 40px 20px 40px;
+        width: 60%;
+        max-height: fit-content;
+    }
+    
+    .main-banner .title {
+        font-family: 'Arial Black', open-sans;
+        font-size: 25px;
+    }
+    
+    .main-banner .description {
+        margin: 25px 0 35px 0;
+    }
+    
+    .banner-btn {
+        padding: 15px 25px;
+        background-color: var(--preto);
+        color: var(--branco);
+        border: none;
+        border-radius: 30px;
+        font-family: 'Trebuchet MS' sans-serif;
+        font-weight: bolder;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    
+    .banner-btn i {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .banner-btn:hover {
+        background-color: rgba(0, 0, 0, .5);
+        color: var(--verde);
+        box-shadow: 0px 0px 0px 1px var(--verde) inset;
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+    /* carousel */
+    
+    .wrapper.popular-carousel {
+        padding: 30px 10px;
+    }
+    
+    .wrapper.popular-carousel h3 {
+        font-size: 18px;
+        max-width: 100%;
+        padding-bottom: 5px;
+    }
+    
+    .wrapper.popular-carousel h4 {
+        padding: 10px 0 0 0;
+    }
+    
+    .title-underline {
+        position: block;
+        width: 70px;
+        height: 0px;
+        border: 2px solid #20BA01;
+        border-radius: 0 2px 2px 0;
+        margin-bottom: 30px;
+    }
+    
+    .game-min {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }

@@ -6,27 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- owl carousel files -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <title>GameBox</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="wrapper">
             <h2 class="logo">GameBox</h2>
             <nav>
-                <a href="#">Início</a>
-                <a href="#">Categorias</a>
-                <a href="#">Meu Perfil</a>
+                <input type="text" placeholder="Search...">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="principal-banner">
-            <div class="container">
-                <h3 class="" titulo>Battlefield 2042</h3>
+        <div class="main-banner">
+            <div class="wrapper">
+                <h3 class="title">Battlefield 2042</h3>
+                <p class="description">Battlefield 2042 marks the return to the iconic all-out warfare of the franchise. Adapt and overcome dynamically-changing battlegrounds with the help of your squad and a cutting-edge arsenal. With support for 128 players, prepare for unprecedented
+                    scale on vast environments. Take on massive experiences, from updated multiplayer modes like Conquest and Breakthrough to the all-new Hazard Zone.</p>
+                <div class="buttons">
+                    <button role="button" class="banner-btn">
+                            <i class="fa-solid fa-play"></i>
+                            PLAY NOW
+                        </button>
+                    <button role="button" class="banner-btn"> 
+                            <i class="fa-solid fa-circle-info"></i>
+                            MORE INFORMATION
+                        </button>
+                </div>
             </div>
         </div>
+        <div class="carousel">
+            <div class="wrapper popular-carousel">
+                <h3>POPULAR GAMES RIGHT NOW</h3>
+                <div class="title-underline"></div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="game-min" src="src/img/min1.png" alt="">
+                        <h4>CHORVS</h4>
+                    </div>
+                    <div class="item">
+                        <img class="game-min" src="src/img/min2.png" alt="">
+                        <h4>Tom Clancy's Rainbow Six Extraction
+                        </h4>
+                    </div>
+                    <div class="item">
+                        <img class="game-min" src="src/img/min3.png" alt="">
+                        <h4>EXO ONE</h4>
+                    </div>
+                    <div class="item">
+                        <img class="game-min" src="src/img/min4.png" alt="">
+                        <h4>The Matrix: Awakens - An Unreal Engine 5 Experience</h4>
+                    </div>
+                    <div class="item">
+                        <img class="game-min" src="src/img/min5.png" alt="">
+                        <h4>Yu-Gi-Oh! Master Duel</h4>
+                    </div>
+                    <div class="item">
+                        <img class="game-min" src="src/img/min6.png" alt="">
+                        <h4>Moncage</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+    <script src="https://kit.fontawesome.com/5d8e5b5b4e.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
