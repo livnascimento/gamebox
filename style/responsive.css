@@ -1,0 +1,30 @@
+@media screen and (min-width: 1000px) {
+    .description {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-banner {
+        height: 400px;
+    }
+    .banner-btn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-banner {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-banner {
+        height: 550px;
+    }
+}
