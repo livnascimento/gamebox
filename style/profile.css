@@ -1,0 +1,104 @@
+:root {
+    --verde: #20ba01;
+    --background: #222;
+    --preto: #101010;
+    --branco: #f2f2f2;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../src/img/background.jpg');
+    background-size: cover;
+}
+
+.main.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px 0px 200px;
+}
+
+.main .social-media i {
+    font-size: 28px;
+    padding: 15px 5px 15px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-information h2 {
+    font-size: 150%;
+    padding-top: 15px;
+}
+
+.personal-information span {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.card {
+    width: 46%;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 4%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.card span {
+    float: right;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.card i {
+    font-size: 22px;
+}
+
+.card.game {
+    display: flex;
+    padding: 15px 10px;
+    max-width: fit-content;
+    flex-direction: column;
+}
+
+.card.settings,
+.card.game-information {
+    margin: 0;
+}
+
+main a {
+    padding: 50px 10px 10px 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+main a:hover {
+    color: var(--verde);
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 0 10px 0;
+}
+
+.game img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.game span {
+    max-width: 100%;
+    float: none;
+    font-size: 12px;
+    font-weight: lighter;
+}

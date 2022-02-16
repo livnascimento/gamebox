@@ -1,0 +1,76 @@
+:root {
+    --verde: #20ba01;
+    --background: #222;
+    --preto: #101010;
+    --branco: #f2f2f2;
+}
+
+.wrapper.games .epic-free-now,
+.wrapper.games .epic-free-upcoming {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.wrapper.games a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    flex: 1;
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+.wrapper.games li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+.wrapper.games li img {
+    max-width: 90%;
+    padding: 4% 0;
+    border-radius: 10px;
+}
+
+.wrapper.games a span {
+    max-width: 90%;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+a h2 {
+    font-size: 24px;
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+
+a h3 {
+    font-size: 18px;
+    max-width: 100%;
+    padding-bottom: 5px;
+}
+
+a h4 {
+    padding: 10px 0 0 0;
+    max-width: 90%;
+}
+
+.title-underline {
+    margin-bottom: 0px;
+}
+
+.wrapper a:hover {
+    box-shadow: 0px 0px 0px 1px var(--verde) inset;
+    cursor: pointer;
+    transition: .5s ease all;
+}
