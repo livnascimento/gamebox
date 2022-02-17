@@ -2,7 +2,7 @@ fetch("https://free-epic-games.p.rapidapi.com/free", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "free-epic-games.p.rapidapi.com",
-            "x-rapidapi-key": "511bb145b3msh6c4fcdd2af0aad4p1659f8jsn9a4995b1c90b"
+            "x-rapidapi-key": "api-key-goes-here"
         }
     })
     .then(response => response.json())
@@ -21,7 +21,7 @@ fetch("https://free-epic-games.p.rapidapi.com/free", {
                 <span>${description}</span>
                 </li>
                 </a>`
-            document.querySelector('.epic-free-now').innerHTML += game
+            document.querySelector('.epic-free-now').innerHTML += game;
         })
         const upcomingList = data.freeGames.upcoming;
         upcomingList.map((item) => {
